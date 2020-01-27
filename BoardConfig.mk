@@ -183,6 +183,7 @@ VENDOR_SECURITY_PATCH := 2019-06-01
 #include device/qcom/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-tmp
+TARGET_EXCLUDE_QCOM_SEPOLICY := true
 
 # We modify several neverallows, so let the build proceed
 ifneq ($(TARGET_BUILD_VARIANT),user)
