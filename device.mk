@@ -24,6 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
 
+DISABLE_EAP_PROXY := true
+
 # Properties
 -include $(DEVICE_PATH)/vendor_prop.mk
 
